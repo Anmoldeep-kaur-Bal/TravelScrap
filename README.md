@@ -38,12 +38,11 @@ http://localhost:5173/
 
 ```text
 src/
-├── components/
-│   ├── DestinationCard.jsx
-│   ├── Loading.jsx
-│   └── SearchBar.jsx
 ├── App.jsx
 ├── App.css
+├── DestinationCard.jsx
+├── Loading.jsx
+├── SearchBar.jsx
 ├── index.css
 └── main.jsx
 ```
