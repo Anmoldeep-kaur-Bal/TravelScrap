@@ -1,62 +1,51 @@
-# TravelScrap ✈️
+# 🌍 TravelScrap
 
-A small ReactJS project created for a ReactJS + AJAX/API assignment.
+A React-based travel exploration app that lets users search for a city and view its current weather information using public APIs.
 
-## What it demonstrates
+## ✨ Features
 
-- React components
-- JSX
-- Props
-- State with `useState`
-- Event handling
-- `fetch()` / AJAX API requests
-- Dynamic API data
-- Loading state
-- Error handling
-- Responsive UI
+- 🔎 Search for any city
+- 🌡️ View current temperature and apparent temperature
+- ☁️ Display current weather conditions
+- 💨 View wind speed
+- 📍 View destination coordinates
+- 🕐 Display timezone
+- ⏳ Loading state while fetching data
+- ⚠️ Error handling for invalid cities or API problems
+- 📱 Responsive and clean user interface
 
-## API used
+## 🛠️ Technologies Used
 
-TravelScrap uses the Open-Meteo Geocoding API to find a city and the Open-Meteo Weather Forecast API to retrieve current weather data.
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Vite
+- Fetch API
+- Git & GitHub
 
-The APIs use HTTP GET requests and return JSON. Open-Meteo provides its non-commercial API without an API key.
+## 🔗 APIs Used
 
-## How to run
+TravelScrap uses the public **Open-Meteo APIs**:
 
-```bash
-npm install
-npm run dev
-```
+- **Geocoding API** — finds the coordinates of the searched city
+- **Weather API** — retrieves current weather information
 
-Open the local URL shown by Vite, usually:
+No API key is required.
+
+## 📂 Project Structure
 
 ```text
-http://localhost:5173/
-```
-
-## Project structure
-
-```text
-src/
-├── App.jsx
-├── App.css
-├── DestinationCard.jsx
-├── Loading.jsx
-├── SearchBar.jsx
-├── index.css
-└── main.jsx
-```
-
-## How the API flow works
-
-1. The user searches for a city.
-2. React calls the Open-Meteo Geocoding API using `fetch()`.
-3. The city name is converted into latitude and longitude.
-4. React calls the Open-Meteo Weather API using those coordinates.
-5. The returned JSON is stored in React state.
-6. `DestinationCard` receives the data through props and displays it.
-7. Loading and error states are shown when appropriate.
-
-## Created for
-
-ReactJS / AJAX assignment.
+TravelScrap/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── DestinationCard.jsx
+│   ├── Loading.jsx
+│   ├── SearchBar.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
